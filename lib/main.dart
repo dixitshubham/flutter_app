@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shubham/pages/login_page.dart';
+import 'package:flutter_app/pages/login_page.dart';
 
 void main()
 {
