@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shubham/pages/login_page.dart';
+
 void main()
 {
   runApp(MyApp());
@@ -7,6 +9,12 @@ void main()
 class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return Material();
+    return MaterialApp(
+      title: "new app",
+      theme: ThemeData(
+        primaryColor: Colors.blue,
+      ),
+      home: new LoginPage(),
+    );
   }
 }
