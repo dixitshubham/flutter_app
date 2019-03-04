@@ -7,12 +7,49 @@ class _LoginPageState extends State<LoginPage>{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      appBar: AppBar(
-        title: Text("LoginPage"),
+      body: SafeArea(
+        child: ListView(
+        padding: EdgeInsets.symmetric(horizontal: 24.0),
+            children: <Widget>[
+        SizedBox(height: 80.0),
+          Column(
+            children: <Widget>[
+            Image.asset('assets/login_icon.png'),
+            SizedBox(height: 20.0),
+            Text('MATERIAL LOGIN'),
+            ],
+          ),
+        SizedBox(height: 120.0,),
+          TextField(
+          decoration: InputDecoration(
+          labelText: 'username',
+        filled: true,
+      ),
+    ),
+    TextField(
+    decoration: InputDecoration(
+    labelText: 'password',
+    filled: true,
+    ),
+      obscureText: true,
+      ),
+       ButtonBar(
+       children: <Widget>[
+         FlatButton(
+       child: Text('cancel'),
+       onPressed:(){
+    },),
+      
+    RaisedButton(child: Text('next'), onPressed: (){},
+
 
       ),
-      body: Container(
-        color: Colors.red,
+],
+
+      )
+    ],
+      )
+
       ),
     );
 
